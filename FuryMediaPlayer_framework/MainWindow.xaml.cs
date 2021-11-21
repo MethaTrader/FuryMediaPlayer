@@ -76,7 +76,7 @@ namespace FuryMediaPlayer_framework
             {
                 (sender as BackgroundWorker).ReportProgress(i);
                 Thread.Sleep(15);
-            }
+            } 
         }
     }
 }

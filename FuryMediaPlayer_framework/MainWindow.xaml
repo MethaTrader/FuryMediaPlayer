@@ -29,7 +29,7 @@
                                 Storyboard.TargetName="MyAnimatedSkewTransform" 
                                 Storyboard.TargetProperty="AngleY"  BeginTime="0:0:0.25"
                                 From="90" To="180" Duration="0:0:2" />
-
+ 
                             <ColorAnimation 
                                 Storyboard.TargetName="GeneralPlotCanvas" 
                                 Storyboard.TargetProperty="(Background).(SolidColorBrush.Color)"

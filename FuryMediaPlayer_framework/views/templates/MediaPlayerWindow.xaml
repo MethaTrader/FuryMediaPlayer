@@ -9,7 +9,7 @@
         WindowStyle="None"
         ResizeMode="CanResizeWithGrip"
         AllowsTransparency="True"
-        WindowStartupLocation="CenterScreen"
+        WindowStartupLocation="CenterScreen" 
         MinHeight="500" MinWidth="600"
         Name="mediaplayerWindow"
         Closing="mediaplayerWindow_Closing"

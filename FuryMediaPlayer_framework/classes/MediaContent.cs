@@ -12,7 +12,7 @@ namespace FuryMediaPlayer_framework
         public string Filename { get; set; }
         //заголовок
         public string Title { get; set; }
-        // аудио или видео
+        // аудио или видео 
         public string Type { get;set; }
         
         public TimeSpan Duraction { get; set; }
