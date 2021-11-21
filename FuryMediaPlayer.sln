@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31825.309
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuryMediaPlayer_framework", "FuryMediaPlayer_framework\FuryMediaPlayer_framework.csproj", "{407C7EF1-B191-4434-B06E-98CCC58CB534}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{407C7EF1-B191-4434-B06E-98CCC58CB534}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{407C7EF1-B191-4434-B06E-98CCC58CB534}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{407C7EF1-B191-4434-B06E-98CCC58CB534}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{407C7EF1-B191-4434-B06E-98CCC58CB534}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8B48A86-F4F5-415C-AD99-F940BCA3A344}
+	EndGlobalSection
+EndGlobal

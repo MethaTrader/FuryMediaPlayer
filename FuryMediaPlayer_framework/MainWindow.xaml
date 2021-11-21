@@ -1,0 +1,63 @@
+﻿<Window x:Class="FuryMediaPlayer_framework.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FuryMediaPlayer_framework"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Title="FuryMediaPlayer" Height="768" Width="1366" Padding="0">
+
+    <Canvas Name="GeneralPlotCanvas" Background="#FF09090E">
+        <Image Source="/src/img/splashscreen.png" Canvas.Left="355.5" Canvas.Top="46.5" Height="511" Width="655">
+            <Image.RenderTransform>
+                <SkewTransform x:Name="MyAnimatedSkewTransform" CenterX="25" CenterY="25" AngleX="90" AngleY="90" />
+            </Image.RenderTransform>
+
+            <Image.Triggers>
+                <EventTrigger RoutedEvent="Window.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation 
+                                Storyboard.TargetName="MyAnimatedSkewTransform" 
+                                Storyboard.TargetProperty="AngleX"  BeginTime="0:0:0.25"
+                                From="90" To="180" Duration="0:0:2" />
+
+                            <DoubleAnimation 
+                                Storyboard.TargetName="MyAnimatedSkewTransform" 
+                                Storyboard.TargetProperty="AngleY"  BeginTime="0:0:0.25"
+                                From="90" To="180" Duration="0:0:2" />
+
+                            <ColorAnimation 
+                                Storyboard.TargetName="GeneralPlotCanvas" 
+                                Storyboard.TargetProperty="(Background).(SolidColorBrush.Color)"
+                                From="#FF09090E" To="#FF232335" Duration="0:0:1" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Image.Triggers>
+        </Image>
+        
+        <Label Style="{StaticResource SplashScreenLogoText}" Opacity="0" Canvas.Left="355.5" Canvas.Top="562.45" Width="655" Height="150" Content="Media Player">
+            <Label.Triggers>
+                <EventTrigger RoutedEvent="Window.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation 
+                                Storyboard.TargetProperty="Opacity" 
+                                From="0" To="1" BeginTime="0:0:0.5" Duration="0:0:3" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Label.Triggers>
+        </Label>
+        <ProgressBar Name="loadingBar" Visibility="Hidden" Style="{StaticResource SplashLoadingBar}" Value="50" Height="26" Width="655" Canvas.Left="355.5" Canvas.Top="717.45" />
+
+        <Label HorizontalContentAlignment="Right" FontFamily="{StaticResource UbuntuCondensed}" Foreground="#FF12121B" Canvas.Left="1113.56" Canvas.Top="730.45" FontSize="16">Development by Zanfirov Roman</Label>
+    
+    
+    
+    </Canvas>
+</Window>

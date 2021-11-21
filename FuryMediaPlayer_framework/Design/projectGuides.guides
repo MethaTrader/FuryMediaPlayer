@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<ProjectGuidesConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ProjectItemGuides>
+    <ProjectItemGuide TargetFile="views\parts\UIPlayerControl.xaml">
+      <GuideModels>
+        <GuideModel>
+          <Guides>
+            <Guide Alignment="Left" Position="-4" />
+            <Guide Alignment="Left" Position="1366" />
+            <Guide Alignment="Left" Position="683" />
+          </Guides>
+        </GuideModel>
+      </GuideModels>
+    </ProjectItemGuide>
+  </ProjectItemGuides>
+</ProjectGuidesConfiguration>
